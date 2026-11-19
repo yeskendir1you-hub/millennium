@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Millennium — Lounge & Karaoke, Алматы</title>
 <meta name="description" content="Millennium Lounge & Karaoke в Алматы, Абая 109/6. Караоке-кабинки, дымные коктейли, живая музыка, рибай за 3 990 ₸. Открыто до 4:00, в пятницу и субботу до 6:00.">
-<meta name="theme-color" content="#0d0b09">
+<meta name="theme-color" content="#0b0907">
 <meta property="og:title" content="Millennium — Lounge & Karaoke">
 <meta property="og:description" content="Караоке, дымные коктейли, живая музыка. Алматы, Абая 109/6.">
 <meta property="og:image" content="images/bar.webp">
@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Manrope:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
 <script type="application/ld+json">
 {
@@ -76,6 +76,7 @@
   <div class="hero__bg" aria-hidden="true">
     <img src="images/hero-blur.webp" alt="" class="hero__blur">
     <img src="images/bar.webp" alt="" class="hero__photo">
+    <div class="hero__3d" id="hero-3d"></div>
   </div>
   <div class="hero__inner">
     <p class="status" id="status"><span class="status__dot"></span><span class="status__text">Сегодня с 15:00</span></p>
@@ -93,7 +94,15 @@
       <li><svg class="ic"><use href="#i-ball"/></svg>Футбол</li>
     </ul>
   </div>
+  <p class="hero__hint" aria-hidden="true">Листайте</p>
 </section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Караоке-кабинки</span><span>Дымные коктейли</span><span>Живая музыка</span><span>Рибай за 3 990 ₸</span><span>До шести утра</span><span>Абая, 109/6</span>
+    <span>Караоке-кабинки</span><span>Дымные коктейли</span><span>Живая музыка</span><span>Рибай за 3 990 ₸</span><span>До шести утра</span><span>Абая, 109/6</span>
+  </div>
+</div>
 
 <section class="section promo" id="promo" aria-labelledby="promo-h">
   <div class="wrap">
@@ -683,5 +692,6 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="js/main.js" defer></script>
+<script type="module" src="js/scene.js"></script>
 </body>
 </html>
