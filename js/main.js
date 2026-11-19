@@ -2,7 +2,7 @@
 const CONFIG = {
   instagram: "millennium_barr",
   // Номер WhatsApp только цифрами, например "77011234567". Пока пусто, бронь уходит в Instagram Direct.
-  whatsapp: "",
+  whatsapp: "77762220256",
   // Цена Апероля по акции, например "2 490". Пока пусто, на сайте написано «уточняйте».
   aperolPrice: "1 890",
   // Часы работы, время Алматы (UTC+5). Ключ: день начала смены (0 — вс).
@@ -50,15 +50,6 @@ if (CONFIG.aperolPrice) {
   });
 }
 
-/* ---------- WhatsApp в контактах ---------- */
-if (CONFIG.whatsapp) {
-  const line = $("#phone-line"), a = $("#phone-link");
-  const d = CONFIG.whatsapp;
-  a.href = `https://wa.me/${d}`;
-  a.textContent = `+${d[0]} ${d.slice(1, 4)} ${d.slice(4, 7)} ${d.slice(7, 9)} ${d.slice(9)}`;
-  line.hidden = false;
-  $("#f-submit span").textContent = "Отправить в WhatsApp";
-}
 
 /* ---------- шапка и бургер ---------- */
 const header = $("#top"), nav = $("#nav"), burger = $("#burger");

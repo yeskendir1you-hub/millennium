@@ -388,7 +388,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--g
 /* ---------- contacts ---------- */
 .contacts__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(24px, 5vw, 64px); }
 .contacts__info { display: grid; gap: 20px; align-content: start; }
-.contacts__addr { display: flex; gap: 14px; font: 500 clamp(1.7rem, 4.4vw, 2.4rem)/1.1 var(--f-display); }
+.contacts__addr { display: flex; gap: 14px; font: 500 clamp(1.7rem, 4.4vw, 2.4rem)/1.1 var(--f-display); font-variant-numeric: lining-nums; }
 .contacts__addr .ic { color: var(--gold); width: 26px; height: 26px; margin-top: 4px; }
 .contacts__line { display: flex; gap: 14px; color: var(--cream-2); }
 .contacts__line .ic { color: var(--gold); margin-top: 3px; }
