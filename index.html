@@ -164,11 +164,15 @@
       <h2 id="menu-h">Меню</h2>
       <p class="head__note">Цены в тенге</p>
     </div>
+    <!-- MENU:START (собирается из tools/build_menu.py) -->
     <div class="tabs" role="tablist" aria-label="Разделы меню">
       <button role="tab" aria-selected="true" aria-controls="m-kitchen" id="t-kitchen">Кухня</button>
+      <button role="tab" aria-selected="false" aria-controls="m-sets" id="t-sets" tabindex="-1">На компанию</button>
       <button role="tab" aria-selected="false" aria-controls="m-bar" id="t-bar" tabindex="-1">Бар</button>
-      <button role="tab" aria-selected="false" aria-controls="m-hookah" id="t-hookah" tabindex="-1">Кальяны</button>
+      <button role="tab" aria-selected="false" aria-controls="m-wine" id="t-wine" tabindex="-1">Вино</button>
+      <button role="tab" aria-selected="false" aria-controls="m-soft" id="t-soft" tabindex="-1">Без алкоголя</button>
       <button role="tab" aria-selected="false" aria-controls="m-dessert" id="t-dessert" tabindex="-1">Десерты</button>
+      <button role="tab" aria-selected="false" aria-controls="m-hookah" id="t-hookah" tabindex="-1">Кальяны</button>
     </div>
 
     <div class="menu__grid">
@@ -177,32 +181,338 @@
       </figure>
       <div class="menu__panels">
         <div class="panel" role="tabpanel" id="m-kitchen" aria-labelledby="t-kitchen" data-img="images/ossobuco.webp">
-          <ul class="dishes">
-            <li><div><h3>Рибай</h3><p>Мраморная говядина, прожарка на ваш вкус</p></div><span class="price">3 990</span></li>
-            <li><div><h3>Оссобуко <em class="tag">новинка</em></h3><p>Томлёная телячья голяшка с овощами</p></div><span class="price">5 990</span></li>
-            <li><div><h3>Дорадо</h3><p>Целая рыба на гриле</p></div><span class="price price--ask">уточняйте</span></li>
-          </ul>
+          <nav class="subnav" aria-label="Кухня: разделы"><a href="#g-kitchen-0">Стейки и гриль</a><a href="#g-kitchen-1">Горячие блюда</a><a href="#g-kitchen-2">Салаты</a><a href="#g-kitchen-3">Холодные закуски</a><a href="#g-kitchen-4">Горячие закуски</a><a href="#g-kitchen-5">Супы</a><a href="#g-kitchen-6">Паста</a><a href="#g-kitchen-7">Пицца</a><a href="#g-kitchen-8">Гарниры</a><a href="#g-kitchen-9">Соусы</a></nav>
+          <section class="mgroup" id="g-kitchen-0"><h3 class="mgroup__h">Стейки и гриль</h3>
+            <ul class="dishes">
+              <li><div><h4>Рибай <em class="tag">акция</em></h4><p>Прожарка на ваш вкус</p></div><span class="price price--deal"><s>9 990</s> 3 990</span></li>
+              <li><div><h4>American Choice</h4></div><span class="price">11 990</span></li>
+              <li><div><h4>Ти-бон</h4></div><span class="price">9 990</span></li>
+              <li><div><h4>Филе-миньон</h4></div><span class="price">10 990</span></li>
+              <li><div><h4>Рибай из конины</h4></div><span class="price">11 990</span></li>
+              <li><div><h4>Стейк из индейки</h4></div><span class="price">4 590</span></li>
+              <li><div><h4>Перепёлка на гриле</h4></div><span class="price">6 990</span></li>
+              <li><div><h4>Дорадо на гриле</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Стейк из сёмги</h4></div><span class="price">4 990</span></li>
+              <li><div><h4>Куриные колбаски</h4></div><span class="price">3 790</span></li>
+              <li><div><h4>Говяжьи колбаски</h4></div><span class="price">3 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-1"><h3 class="mgroup__h">Горячие блюда</h3>
+            <ul class="dishes">
+              <li><div><h4>Оссобуко <em class="tag">новинка</em></h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Блюдо от шефа</h4></div><span class="price">4 790</span></li>
+              <li><div><h4>Картофель по-домашнему</h4></div><span class="price">3 790</span></li>
+              <li><div><h4>Фирменная томлёная говядина</h4></div><span class="price">4 990</span></li>
+              <li><div><h4>Филе судака в сливочном соусе</h4></div><span class="price">5 690</span></li>
+              <li><div><h4>Курица с овощами в кисло-сладком соусе</h4></div><span class="price">3 690</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-2"><h3 class="mgroup__h">Салаты</h3>
+            <ul class="dishes">
+              <li><div><h4>Салат от шефа</h4></div><span class="price">4 290</span></li>
+              <li><div><h4>Тёплый салат с телятиной</h4></div><span class="price">4 290</span></li>
+              <li><div><h4>Тёплый салат с курицей</h4></div><span class="price">3 190</span></li>
+              <li><div><h4>«Цезарь» с курицей</h4></div><span class="price">3 990</span></li>
+              <li><div><h4>«Цезарь» с креветками</h4></div><span class="price">4 490</span></li>
+              <li><div><h4>Салат с хрустящими баклажанами</h4></div><span class="price">3 590</span></li>
+              <li><div><h4>Овощной салат с мини-моцареллой</h4></div><span class="price">3 790</span></li>
+              <li><div><h4>Салат с сыром и копчёной говядиной</h4></div><span class="price">4 190</span></li>
+              <li><div><h4>Салат с жареной брынзой</h4></div><span class="price">3 690</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-3"><h3 class="mgroup__h">Холодные закуски</h3>
+            <ul class="dishes">
+              <li><div><h4>Сырное плато</h4></div><span class="price">10 990</span></li>
+              <li><div><h4>Мясное плато</h4></div><span class="price">10 990</span></li>
+              <li><div><h4>Маринованная сельдь с картофелем</h4></div><span class="price">4 190</span></li>
+              <li><div><h4>Ассорти разносолов</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Кавказская нарезка</h4></div><span class="price">4 190</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-4"><h3 class="mgroup__h">Горячие закуски</h3>
+            <ul class="dishes">
+              <li><div><h4>Мидии в сливочно-чесночном соусе</h4></div><span class="price">5 590</span></li>
+              <li><div><h4>Хрустящие крылья</h4></div><span class="price">3 990</span></li>
+              <li><div><h4>Сырные палочки</h4></div><span class="price">2 290</span></li>
+              <li><div><h4>Тако с говядиной</h4></div><span class="price">4 590</span></li>
+              <li><div><h4>Кесадилья с курицей</h4></div><span class="price">3 590</span></li>
+              <li><div><h4>Millennium бургер</h4></div><span class="price">4 290</span></li>
+              <li><div><h4>Смэш-бургер</h4></div><span class="price">3 990</span></li>
+              <li><div><h4>Клаб-сэндвич</h4></div><span class="price">3 790</span></li>
+              <li><div><h4>Пивные креветки</h4></div><span class="price">4 590</span></li>
+              <li><div><h4>Чечил жареный</h4></div><span class="price">2 490</span></li>
+              <li><div><h4>Гарлики с чесноком</h4></div><span class="price">2 190</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-5"><h3 class="mgroup__h">Супы</h3>
+            <ul class="dishes">
+              <li><div><h4>Чечевичный суп</h4></div><span class="price">2 790</span></li>
+              <li><div><h4>Сборная солянка с казы</h4></div><span class="price">3 590</span></li>
+              <li><div><h4>Том-ям из четырёх вкусов</h4></div><span class="price">4 690</span></li>
+              <li><div><h4>Рамен с курицей</h4></div><span class="price">4 190</span></li>
+              <li><div><h4>Рамен с говядиной</h4></div><span class="price">4 590</span></li>
+              <li><div><h4>Пельмени с бульоном</h4></div><span class="price">3 490</span></li>
+              <li><div><h4>Лесная похлёбка</h4></div><span class="price">2 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-6"><h3 class="mgroup__h">Паста</h3>
+            <ul class="dishes">
+              <li><div><h4>Паста с морепродуктами</h4></div><span class="price">4 690</span></li>
+              <li><div><h4>Пенне «Арраббьята»</h4></div><span class="price">3 890</span></li>
+              <li><div><h4>Паста с цыплёнком и грибами</h4></div><span class="price">4 190</span></li>
+              <li><div><h4>Паста с креветками</h4></div><span class="price">4 690</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-7"><h3 class="mgroup__h">Пицца</h3>
+            <ul class="dishes">
+              <li><div><h4>Маргарита</h4></div><span class="price">3 590</span></li>
+              <li><div><h4>Пепперони</h4></div><span class="price">3 990</span></li>
+              <li><div><h4>Четыре сыра</h4></div><span class="price">4 490</span></li>
+              <li><div><h4>Четыре сезона</h4></div><span class="price">4 690</span></li>
+              <li><div><h4>Курица с грибами</h4></div><span class="price">4 390</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-8"><h3 class="mgroup__h">Гарниры</h3>
+            <ul class="dishes">
+              <li><div><h4>Рис на пару</h4></div><span class="price">1 290</span></li>
+              <li><div><h4>Картофельное пюре</h4></div><span class="price">1 390</span></li>
+              <li><div><h4>Картофельные дольки</h4></div><span class="price">1 690</span></li>
+              <li><div><h4>Овощи на гриле</h4></div><span class="price">2 190</span></li>
+              <li><div><h4>Картофель фри</h4></div><span class="price">1 490</span></li>
+              <li><div><h4>Чесночный хлеб</h4></div><span class="price">1 390</span></li>
+              <li><div><h4>Хлебная корзина</h4></div><span class="price">1 490</span></li>
+              <li><div><h4>Картофельные шарики</h4></div><span class="price">1 590</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-kitchen-9"><h3 class="mgroup__h">Соусы</h3>
+            <ul class="dishes">
+              <li><div><h4>Сырный, тар-тар, кетчуп, острый, BBQ</h4></div><span class="price">890</span></li>
+              <li><div><h4>Демиглас, сливочно-грибной</h4></div><span class="price">990</span></li>
+            </ul>
+          </section>
+        </div>
+        <div class="panel" role="tabpanel" id="m-sets" aria-labelledby="t-sets" data-img="images/table.webp" hidden>
+          <section class="mgroup" id="g-sets-0"><h3 class="mgroup__h">Блюда на компанию</h3>
+            <ul class="dishes">
+              <li><div><h4>Ведро креветок</h4></div><span class="price">8 990</span></li>
+              <li><div><h4>Крылья в ведре</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Пивной сет S</h4><p>Луковые кольца, наггетсы, сырные палочки, охотничьи колбаски, соус тар-тар, кетчуп</p></div><span class="price">8 445</span></li>
+              <li><div><h4>Пивной сет XL</h4><p>Пивные креветки, кольца кальмара, жареный чечил, чесночные гренки, картофель фри, сырный соус, тар-тар, кетчуп</p></div><span class="price">13 445</span></li>
+              <li><div><h4>Пивной сет XXL</h4><p>Бастурма, вяленая рыба, сырные палочки, наггетсы, пивные креветки, креветочные чипсы, соусы тар-тар, сырный, бургерный, кетчуп</p></div><span class="price">18 445</span></li>
+              <li><div><h4>Сет из колбасок</h4><p>Куриная, говяжья, баранья колбаски и колбаска из конины, картофельные дольки, квашеная капуста, хрен, горчица</p></div><span class="price">18 445</span></li>
+              <li><div><h4>Куриный микс</h4><p>Перепёлка, хрустящий цыплёнок, куриные крылья, стейк из индейки, наггетсы, куриный стейк, картофельные шарики, кетчуп, сырный соус</p></div><span class="price">27 790</span></li>
+              <li><div><h4>Мясное ассорти</h4><p>Ти-бон, рибай, куриная и говяжья колбаски, куриный стейк, куриные крылья, картофельные дольки, соус BBQ</p></div><span class="price">36 990</span></li>
+              <li><div><h4>Рыбное ассорти</h4><p>Дорадо на гриле, стейк из сёмги, филе судака, мидии, креветки, овощи на гриле, сливочный соус</p></div><span class="price">39 990</span></li>
+            </ul>
+          </section>
         </div>
         <div class="panel" role="tabpanel" id="m-bar" aria-labelledby="t-bar" data-img="images/shots.webp" hidden>
-          <ul class="dishes">
-            <li><div><h3>Дымный коктейль</h3><p>Подаём под колпаком с дымом</p></div><span class="price">3 990</span></li>
-            <li><div><h3>Сет «20 шотов»</h3><p>Пн, Вт, Ср: на всю компанию</p></div><span class="price">12 990</span></li>
-            <li><div><h3>Апероль шприц</h3><p>Акционная цена</p></div><span class="price" data-price="aperol">1 890</span></li>
-          </ul>
+          <nav class="subnav" aria-label="Бар: разделы"><a href="#g-bar-0">Коктейли</a><a href="#g-bar-1">Шоты</a><a href="#g-bar-2">Пиво</a><a href="#g-bar-3">Мартини</a><a href="#g-bar-4">Ликёры, вермуты, биттеры</a><a href="#g-bar-5">Водка</a><a href="#g-bar-6">Ром, джин, текила</a><a href="#g-bar-7">Виски</a><a href="#g-bar-8">Коньяк и бренди</a></nav>
+          <section class="mgroup" id="g-bar-0"><h3 class="mgroup__h">Коктейли</h3>
+            <ul class="dishes">
+              <li><div><h4>Aperol Spritz <em class="tag">акция</em></h4></div><span class="price price--deal"><s>3 090</s> 1 890</span></li>
+              <li><div><h4>Дымный коктейль</h4><p>Подаём под колпаком с дымом</p></div><span class="price">3 990</span></li>
+              <li><div><h4>Long Island</h4></div><span class="price">3 090</span></li>
+              <li><div><h4>Gin Tonic</h4></div><span class="price">2 990</span></li>
+              <li><div><h4>Piña Colada</h4></div><span class="price">3 090</span></li>
+              <li><div><h4>Sex on the Beach</h4></div><span class="price">3 090</span></li>
+              <li><div><h4>Whiskey Sour</h4></div><span class="price">3 090</span></li>
+              <li><div><h4>White Russian</h4></div><span class="price">3 090</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-1"><h3 class="mgroup__h">Шоты <span class="mgroup__vol">6 шт</span></h3>
+            <ul class="dishes">
+              <li><div><h4>20 шотов</h4><p>Пн, Вт, Ср: сет на всю компанию</p></div><span class="price">12 990</span></li>
+              <li><div><h4>Blackberry Shot</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Mango Shot</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Raspberry Shot</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>Citrus Shot</h4></div><span class="price">5 990</span></li>
+              <li><div><h4>B52, 3 шт</h4></div><span class="price">3 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-2"><h3 class="mgroup__h">Пиво <span class="mgroup__vol">500 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Millennium, разливное</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Heineken, разливное</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Corona Extra, бутылка</h4></div><span class="price">3 490</span></li>
+              <li><div><h4>Heineken, бутылка</h4></div><span class="price">2 390</span></li>
+              <li><div><h4>Tsingtao Zero Alcohol, бутылка</h4></div><span class="price">2 190</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-3"><h3 class="mgroup__h">Мартини <span class="mgroup__vol">100 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Martini Fiero, Bitter, Extra Dry, Bianco</h4></div><span class="price">2 190</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-4"><h3 class="mgroup__h">Ликёры, вермуты, биттеры <span class="mgroup__vol">50 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Aperol</h4></div><span class="price">2 290</span></li>
+              <li><div><h4>Jägermeister</h4></div><span class="price">2 390</span></li>
+              <li><div><h4>Baileys</h4></div><span class="price">2 190</span></li>
+              <li><div><h4>Kahlúa</h4></div><span class="price">2 190</span></li>
+              <li><div><h4>Absinth</h4></div><span class="price">2 290</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-5"><h3 class="mgroup__h">Водка <span class="mgroup__vol">50 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Царская Серебряная</h4></div><span class="price">1 890</span></li>
+              <li><div><h4>Absolut Original</h4></div><span class="price">2 190</span></li>
+              <li><div><h4>Nemiroff De Luxe</h4></div><span class="price">1 790</span></li>
+              <li><div><h4>Nemiroff Lex</h4></div><span class="price">2 990</span></li>
+              <li><div><h4>Reyka</h4></div><span class="price">2 690</span></li>
+              <li><div><h4>Belvedere</h4></div><span class="price">4 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-6"><h3 class="mgroup__h">Ром, джин, текила <span class="mgroup__vol">50 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Oakheart</h4></div><span class="price">1 990</span></li>
+              <li><div><h4>Bacardi Spiced, Carta Blanca, Carta Negra</h4></div><span class="price">1 990</span></li>
+              <li><div><h4>Beefeater</h4></div><span class="price">1 990</span></li>
+              <li><div><h4>Monkey 47</h4></div><span class="price">4 690</span></li>
+              <li><div><h4>Olmeca Blanco, Gold</h4></div><span class="price">1 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-7"><h3 class="mgroup__h">Виски <span class="mgroup__vol">50 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Chivas Regal 18 YO</h4></div><span class="price">6 190</span></li>
+              <li><div><h4>Chivas Regal 12 YO</h4></div><span class="price">4 190</span></li>
+              <li><div><h4>The Glenlivet 12 YO</h4></div><span class="price">4 190</span></li>
+              <li><div><h4>Jack Daniel&#x27;s</h4></div><span class="price">5 790</span></li>
+              <li><div><h4>Jameson Original</h4></div><span class="price">2 490</span></li>
+              <li><div><h4>Ballantine&#x27;s Finest</h4></div><span class="price">1 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-bar-8"><h3 class="mgroup__h">Коньяк и бренди <span class="mgroup__vol">50 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Ararat 5 YO</h4></div><span class="price">1 990</span></li>
+              <li><div><h4>Ararat Akhtamar 10 YO</h4></div><span class="price">2 790</span></li>
+              <li><div><h4>Hennessy VS</h4></div><span class="price">3 390</span></li>
+            </ul>
+          </section>
         </div>
-        <div class="panel" role="tabpanel" id="m-hookah" aria-labelledby="t-hookah" data-img="images/hall.webp" hidden>
-          <ul class="dishes">
-            <li><div><h3>Дымная чаша</h3><p>Классический кальян, вкус подберёт мастер</p></div><span class="price">3 990</span></li>
-          </ul>
+        <div class="panel" role="tabpanel" id="m-wine" aria-labelledby="t-wine" data-img="images/bar.webp" hidden>
+          <nav class="subnav" aria-label="Вино: разделы"><a href="#g-wine-0">Шампанское</a><a href="#g-wine-1">Игристое</a><a href="#g-wine-2">Красное</a><a href="#g-wine-3">Белое</a><a href="#g-wine-4">Бокал вина</a></nav>
+          <section class="mgroup" id="g-wine-0"><h3 class="mgroup__h">Шампанское <span class="mgroup__vol">750 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Moët &amp; Chandon Brut Impérial</h4></div><span class="price">89 990</span></li>
+              <li><div><h4>Moët &amp; Chandon Rosé Impérial</h4></div><span class="price">99 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-wine-1"><h3 class="mgroup__h">Игристое <span class="mgroup__vol">750 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Martini Asti</h4></div><span class="price">23 990</span></li>
+              <li><div><h4>Martini Prosecco</h4></div><span class="price">23 990</span></li>
+              <li><div><h4>Mionetto Prosecco</h4></div><span class="price">23 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-wine-2"><h3 class="mgroup__h">Красное <span class="mgroup__vol">750 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Киндзмараули</h4><p>Грузия, полусладкое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>El Chivo</h4><p>Чили, сухое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>Baron Saint Michel Moelleux</h4><p>Франция, полусладкое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>San Valentin Torres</h4><p>Испания, сухое</p></div><span class="price">17 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-wine-3"><h3 class="mgroup__h">Белое <span class="mgroup__vol">750 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Алазанская долина</h4><p>Грузия, полусладкое</p></div><span class="price">16 990</span></li>
+              <li><div><h4>Цинандали</h4><p>Грузия, сухое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>El Chivo</h4><p>Чили, сухое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>Jacob&#x27;s Creek Classic Chardonnay</h4><p>Австралия, сухое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>Baron Saint Michel Moelleux</h4><p>Франция, полусладкое</p></div><span class="price">15 990</span></li>
+              <li><div><h4>San Valentin Torres</h4><p>Испания, сухое</p></div><span class="price">17 990</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-wine-4"><h3 class="mgroup__h">Бокал вина <span class="mgroup__vol">150 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>San Valentin Torres</h4><p>Сухое</p></div><span class="price">3 190</span></li>
+              <li><div><h4>Baron Saint Michel Moelleux</h4><p>Полусладкое</p></div><span class="price">2 990</span></li>
+            </ul>
+          </section>
+        </div>
+        <div class="panel" role="tabpanel" id="m-soft" aria-labelledby="t-soft" data-img="images/terrace.webp" hidden>
+          <nav class="subnav" aria-label="Без алкоголя: разделы"><a href="#g-soft-0">Лимонады</a><a href="#g-soft-1">Фреши</a><a href="#g-soft-2">Чай</a><a href="#g-soft-3">Кофе</a><a href="#g-soft-4">Милкшейки</a><a href="#g-soft-5">Вода и напитки</a></nav>
+          <section class="mgroup" id="g-soft-0"><h3 class="mgroup__h">Лимонады <span class="mgroup__vol">400 / 1000 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Millennium</h4><p>Грейпфрут и малина</p></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Киви и яблоко</h4></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Киви и лайм</h4></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Ананас и апельсин</h4></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Манго и маракуйя</h4></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Мохито</h4></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Мохито клубничный</h4></div><span class="price">1 790 / 3 490</span></li>
+              <li><div><h4>Алоэ и виноград</h4></div><span class="price">1 790 / 3 490</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-soft-1"><h3 class="mgroup__h">Фреши <span class="mgroup__vol">250 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Апельсин</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Грейпфрут</h4></div><span class="price">2 890</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-soft-2"><h3 class="mgroup__h">Чай <span class="mgroup__vol">900 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Ассам</h4></div><span class="price">1 990</span></li>
+              <li><div><h4>Сенча</h4></div><span class="price">1 990</span></li>
+              <li><div><h4>Жасмин</h4></div><span class="price">2 190</span></li>
+              <li><div><h4>Молочный улун</h4></div><span class="price">2 190</span></li>
+              <li><div><h4>Ташкентский</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Марокканский</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Облепиховый</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Имбирный с лимоном</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Фруктово-ягодный</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Алоэ и жасмин</h4></div><span class="price">2 890</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-soft-3"><h3 class="mgroup__h">Кофе</h3>
+            <ul class="dishes">
+              <li><div><h4>Эспрессо</h4></div><span class="price">1 090</span></li>
+              <li><div><h4>Американо</h4></div><span class="price">990</span></li>
+              <li><div><h4>Айс-американо</h4></div><span class="price">990</span></li>
+              <li><div><h4>Капучино</h4></div><span class="price">1 390</span></li>
+              <li><div><h4>Латте</h4></div><span class="price">1 490</span></li>
+              <li><div><h4>Айс-латте</h4></div><span class="price">1 490</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-soft-4"><h3 class="mgroup__h">Милкшейки <span class="mgroup__vol">300 мл</span></h3>
+            <ul class="dishes">
+              <li><div><h4>Ваниль, клубника, шоколад</h4></div><span class="price">2 190</span></li>
+            </ul>
+          </section>
+          <section class="mgroup" id="g-soft-5"><h3 class="mgroup__h">Вода и напитки</h3>
+            <ul class="dishes">
+              <li><div><h4>Tassay, 500 мл</h4></div><span class="price">1 590</span></li>
+              <li><div><h4>Tassay Excellent, 750 мл</h4></div><span class="price">3 390</span></li>
+              <li><div><h4>Tassay Emerald, 750 мл</h4></div><span class="price">3 390</span></li>
+              <li><div><h4>Borjomi, 330 мл</h4></div><span class="price">2 890</span></li>
+              <li><div><h4>Pago</h4></div><span class="price">1 890</span></li>
+              <li><div><h4>Schweppes, 450 мл</h4></div><span class="price">2 990</span></li>
+              <li><div><h4>Cola, Fanta, Sprite, Zero, 250 мл</h4></div><span class="price">1 890</span></li>
+            </ul>
+          </section>
         </div>
         <div class="panel" role="tabpanel" id="m-dessert" aria-labelledby="t-dessert" data-img="images/birthday.webp" hidden>
-          <ul class="dishes">
-            <li><div><h3>Десерты дня</h3><p>Чизкейк, рулет и сезонные десерты</p></div><span class="price price--ask">уточняйте</span></li>
-          </ul>
+          <section class="mgroup" id="g-dessert-0">
+            <ul class="dishes">
+              <li><div><h4>Гонконгские вафли</h4></div><span class="price">3 990</span></li>
+              <li><div><h4>Брауни</h4></div><span class="price">3 990</span></li>
+              <li><div><h4>Чизкейк в ассортименте</h4></div><span class="price">3 590</span></li>
+              <li><div><h4>Фруктовая тарелка</h4></div><span class="price">9 990</span></li>
+              <li><div><h4>Мини-фруктовая тарелка</h4></div><span class="price">5 990</span></li>
+            </ul>
+          </section>
         </div>
-        <p class="menu__more">Полное меню покажет официант. Есть вопрос по блюду? <a href="https://ig.me/m/millennium_barr" target="_blank" rel="noopener">Напишите в Direct</a></p>
+        <div class="panel" role="tabpanel" id="m-hookah" aria-labelledby="t-hookah" data-img="images/hall.webp" hidden>
+          <section class="mgroup" id="g-hookah-0">
+            <ul class="dishes">
+              <li><div><h4>Дымная чаша</h4><p>Вкус подберёт мастер</p></div><span class="price">3 990</span></li>
+            </ul>
+          </section>
+        </div>
+        <p class="menu__more">Обслуживание 10%. Цены могут меняться, актуальное меню у официанта. Вопрос по блюду? <a href="https://ig.me/m/millennium_barr" target="_blank" rel="noopener">Напишите в Direct</a></p>
       </div>
     </div>
+    <!-- MENU:END -->
   </div>
 </section>
 
@@ -273,6 +583,7 @@
         <li><span>Вс – Чт</span><b>15:00 – 04:00</b></li>
         <li><span>Пт – Сб</span><b>15:00 – 06:00</b></li>
       </ul>
+      <p class="book__rules">Дресс-код: без спортивной и пляжной одежды. В зале и кабинках не курят. Обслуживание 10%.</p>
     </div>
     <form class="form" id="book-form" novalidate>
       <div class="field">
